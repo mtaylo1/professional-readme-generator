@@ -46,6 +46,8 @@ function runFile(data) {
     
     return `# ${data.title}
     ## License:
+    ## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
+    ### ${renderLicenseLink(data.license)}
     [![license] ${data.license}]
     ## Table of contents:
     -[Description](#description)
