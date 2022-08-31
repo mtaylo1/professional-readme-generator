@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs")
 const inquirer = require('inquirer');
-const fileGenerator = require('./src/readmeTemplate');
+const runFile = require('./src/runFile');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -12,11 +12,12 @@ const questions = [
     },{
         type: "input",
         message: 'What is your GitHub user Name?',
-        name: "userName",
-    },{
+        name: "github",
+    },{    
         type: "input",
-        message: 'What is your GitHub profile link?',
-        name: "GitHub",
+        message: 'What is your email?',
+        name: "email",
+
     },{
         type: "list",
         message: 'Select which license you would like to use',
@@ -38,20 +39,16 @@ const questions = [
         name: "contribute",
     },{
         type: "input",
-        message: 'What is your GitHub user Name?',
-        name: "userName",
+        message: 'What is the use of this project',
+        name: "usage",
     },{
         type: "input",
-        message: 'What is your GitHub user Name?',
-        name: "userName",
+        message: 'How do you test this project?',
+        name: "test",
     },{
         type: "input",
-        message: 'What is your GitHub user Name?',
-        name: "userName",
-    },{
-         type: "input",
-        message: 'What is your GitHub user Name?',
-        name: "userName",
+        message: 'How would this be installed?',
+        name: "installation",
     }
 ];
 
@@ -69,9 +66,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function (userInput) {
+    .then(function(userInput) {
         console.log(userInput)
-        writeToFile("README.md", readmeTemplate(userInput));
+        // const runFile = runFile(userInput);
+        writeToFile("readme.md", runFile(userInput));
     });
 };
 
