@@ -1,8 +1,10 @@
-# Professional ReadMe Generator
+# 
+    Professional ReadMe Generator
     ## License:
     ## License: MIT  ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
     ### https://choosealicense.com/licenses/mit/
     [![license] MIT]
+    
     ## Table of contents:
     -[Description](#description)
     -[Installation](#installation)
@@ -20,10 +22,10 @@
     ## License:
     MIT
     ## Contribution:
-    Just me :) 
+    Just me :)
     ## Testing:
     run index.js in your terminal to test this app
     ## Contact Information: 
-    -Github: [mtaylo1] (https://github.com/mtaylo1)
-    -Email: [fakeemail@gmail.com] (fakeemail@gmail.com)
+    -Github: mtaylo1 (https://github.com/mtaylo1)
+    -Email: fakeemail@gmail.com
     

@@ -44,11 +44,13 @@ function renderLicenseSection(license) {
 }
 function runFile(data) {
     
-    return `# ${data.title}
+    return `# 
+    ${data.title}
     ## License:
     ## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
     ### ${renderLicenseLink(data.license)}
     [![license] ${data.license}]
+    
     ## Table of contents:
     -[Description](#description)
     -[Installation](#installation)
@@ -70,8 +72,8 @@ function runFile(data) {
     ## Testing:
     ${data.test}
     ## Contact Information: 
-    -Github: [${data.github}] (https://github.com/${data.github})
-    -Email: [${data.email}] (${data.email})
+    -Github: ${data.github} (https://github.com/${data.github})
+    -Email: ${data.email}
     `};
 
     module.exports = runFile;
