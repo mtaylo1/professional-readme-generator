@@ -44,8 +44,7 @@ function renderLicenseSection(license) {
 }
 function runFile(data) {
 
-    return `# 
-    ${data.title}
+    return `# ${data.title}
    ## License:
    ## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
    ### ${renderLicenseLink(data.license)}
