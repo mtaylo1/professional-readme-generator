@@ -1,8 +1,8 @@
 # Professional ReadMe Generator
    ## License:
-   ## License: MIT  ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
-   ### ![[license] MIT] https://choosealicense.com/licenses/mit/
-   
+   ## License: APACHE 2.0  
+   ### 
+   APACHE 2.0]
     
    ## Table of contents:
    -[Description](#description)
@@ -18,8 +18,6 @@
    This can be installed by downloading into a zip and extracting the files on your computer.
    ## Usage:
    This quickly creates a professional ReadMe.md for whatever project you are working on
-   ## License:
-   MIT
    ## Contribution:
    Just me :)
    ## Testing:

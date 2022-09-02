@@ -48,7 +48,7 @@ function runFile(data) {
    ## License:
    ## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
    ### ${renderLicenseLink(data.license)}
-   [![license] ${data.license}]
+   ${data.license}]
     
    ## Table of contents:
    -[Description](#description)
@@ -64,8 +64,6 @@ function runFile(data) {
    ${data.installation}
    ## Usage:
    ${data.usage}
-   ## License:
-   ${data.license}
    ## Contribution:
    ${data.contribute}
    ## Testing:
