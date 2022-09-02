@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     if (license === 'MIT') {
         badge = '![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)'
     } else if (license === 'Apache 2.0') {
-        badge = '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)'
+        badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
     } else if (license === 'GPL v3.0') {
         badge = '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)'
     } else {
@@ -48,7 +48,6 @@ function runFile(data) {
    ## License:
    ## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
    ### ${renderLicenseLink(data.license)}
-   ${data.license}]
     
    ## Table of contents:
    -[Description](#description)
